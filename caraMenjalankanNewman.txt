@@ -1,0 +1,9 @@
+//Ini merupakan catatan untuk diri saya sendiri (jika postman udah melebihi kuota)
+1.caranya dengan install dulu newman dengan perintah di cmd:
+
+npm install newman --g
+2. Sebelum menjalankan Postman Collection, pastikan web server sedang berjalan. Jika tidak, jalankan dulu dengan perintah berikut ini.
+npm run start-dev
+
+3. Setelah web server dipastikan berjalan, selanjutnya kita bisa jalankan Postman Collection dengan Newman melalui perintah di bawah ini.
+newman run notes-api-test.postman_collection.json --environment notes-api-test.postman_environment.json
